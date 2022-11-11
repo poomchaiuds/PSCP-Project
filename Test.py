@@ -1,5 +1,5 @@
 '''test'''
 def main():
     '''main'''
-    print("hello world")
+    print("Hello World")
 main()
