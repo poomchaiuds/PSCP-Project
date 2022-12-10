@@ -1,0 +1,272 @@
+<!--
+  _         _                                          _                                         
+ | |       | |                                        (_)                                         
+ | |_  __ _| | _  _   _ _ __  ___   __ _     __ _ _ __  _ _ __  ___  ____         
+ |  _|/ _` | |/ /| | | | '_ \/ _ \ / _` |   / _` | '_ \| | '_ \/ _ \/ __ \  
+ | |_| | | |   / | |_| | | |  | | | |_| |  | |_| | | | | | | |  | | | ___/ 
+  \__|\__,_|_|\_\ \___/|_| |__| |_|\__,_|   \__,_|_| |_|_|_| |__| |_|\___|    
+                                                         _            _
+                                                        (_)          | | 
+  _ __   ____  ____   _ __              _ __  _ __  ___  _  ____  ___| |_
+ | `_ \ / ___|/  ___\| `_ \            | `_ \| '__|/ _ \| |/ __ \/ __|  _|
+ | |_| | |__ |  /    | |_| |   _____   | |_| | |  | |_| | |  ___/ |__| |_                                                     
+ |  __/ \__  \  |    |  __/   |_____|  |  __/|_|   \___/| |\____|\___|\__|                                                              
+ | |    __ | |  \___ | |               | |            __/ |
+ |_|   |____/ \_____/|_|               |_|           |___/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>86 Eighty Six</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+/*.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+/* Style the navigation bar links */
+/*.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+/* Right-aligned link */
+/*.navbar a.right {
+  float: right;
+}
+/* Change color on hover */
+/*.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Active/current link */
+/*.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding:25px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 80%; /* IE10 */
+  flex: 80%;
+  background-color: white;
+  padding: 25px;
+}
+
+.split {
+  height: 50%;
+  width: 50%;
+  position: static;
+  z-index: 1;
+  top: 0;
+  overflow-x: visible;
+  padding-top: 0px;
+}
+
+.left {
+  padding: 20px;
+  text-align: left;
+}
+
+.right {
+  padding: 20px;
+  text-align: right
+}
+
+.centered {
+  position: static;
+  padding-left: 200px;
+}
+
+img.centered {
+  width: 150px;
+  border-radius: 50%;
+}
+h3 {
+  margin-left: 40px;
+}
+
+p {
+font-size: 16px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+}
+
+.mid{
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Takuma anime</h1>
+  <p>prototype</p>
+</div>
+
+<div class="row">
+  <div class="side">
+    <div><img src="https://cdn.myanimelist.net/images/anime/1987/117507.jpg"></div>
+    <h3>ข้อมูล</h3>
+    <p>ช่องทางที่ฉาย: TV</p>
+    <p>จำนวนตอน: 11</p>
+    <p>สถานะ: จบแล้ว</p>
+    <p>เริ่มฉาย: 11 เมษายน 2021 to 20 มิถุนายน 2021</p>
+    <p>ฤดูกาล: ฤดูใบไม้ผลิ 2021</p>
+    <p>ฉายทุกวันที่: วันอาทิตย์ เวลา 00:00 (JST)</p>
+    <p>ผู้กำกับ: Aniplex, Kadokawa, Bandai Spirits</p>
+    <p>ผู้ถือลิขสิทธิ์: Motoki Yoshihara</p>
+    <p>สตูดิโอ: A-1 Pictures</p>
+    <p>ช่องทางหลัก: Light novel</p>
+    <p>ประเภทเนื้อหา: Action, Drama, Sci-Fi</p>
+    <p>ธีม: Mecha, Military</p>
+    <p>ระยะเวลาที่ฉาย: 23 นาทีต่อตอน</p>
+    <p>ประเภทความรุนแรง: R - 17+ (รุนแรงและหยาบคาย)</p>
+  </div>
+  <div class="main">
+    <h2>86 Eighty Six</h2>
+    <p>สาธารณรัฐซันแมกโนเลียถูกจักรวรรดิ ซึ่งเป็นดินแดนข้างเคียงส่งจักรกลรบไร้พลขับ ลีเจี้ยน เข้ามารุกรานไม่เว้นแต่ละวัน สาธารณรัฐจึงคิดค้นอาวุธรูปแบบเดียวกันขึ้นเพื่อการตอบโต้และในที่สุดก็สามารถขับไล่ภัยคุกคามสิ้นไปโดยไม่มีผู้ใดต้องสละชีพ ใช่…เพียงเปลือกนอก ความจริงแล้วหาใช่ปราศจากการหลั่งเลือดเนื้อ “เขต 86 ไร้ซึ่งตัวตน” ตั้งอยู่นอก “85” เขตของสาธารณรัฐ ทุกวันคืน เหล่าหนุ่มสาวอันถูกตีตรา “เอทตี้ซิกซ์” ได้เข้าต่อสู้ในฐานะ “จักรกลมีพลขับ” ตลอดมา</p>
+    <p>เด็กหนุ่มนามว่า “ชิน” ผู้นำเหล่าหนุ่มสาวเข้าสู่ดินแดนแห่งความตาย และเด็กสาวนาม “เรน่า” ผู้เป็นแฮนด์เลอร์ ผู้บังคับบัญชาการ ออกคำสั่งพวกเขาผ่านการสื่อสารพิเศษจากแนวหลังอันห่างไกล เรื่องราวของทั้งสอง…การต่อสู้ซึ่งเป็นโศกนาฏกรรมแสนทารุณและจากลานับนิรันดร์เริ่มต้นขึ้นแล้ว!
+    </p>
+    <br>
+    
+      <div class="centered">
+        <h2>Opening theme</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/JXm0HdiDVfM">
+        </iframe>
+        </div>
+      <div class="centered">
+        <h2>Main Trailer</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/WVegRUOgkPM">
+        </iframe>
+      </div>
+      <div>
+        <h2>Characters & Voice Actors</h2></div>
+      <div class="verticalhorizontal centered">
+        <table class="center" style="width: 100%;">
+          <tr>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/15/428175.webp?s=4911c8c92fe6b9a37dfb9956f1066ef4"></td>
+            <td>Milizé, Vladilena</td>
+            <td>Hasegawa, Ikumi</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/1/68965.jpg?s=dc13c8eef6caa231f1a2f0ba0fe771cd"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/13/481806.webp?s=4206fcf5f990e7e73fd7402253dbfaee"></td>
+            <td>Nouzen, Shinei</td>
+            <td>Chiba, Shouya</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/2/69338.jpg?s=bf10eede6e38d9a221d42b6689a4a1a7"></td>
+          </tr>
+        
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/9/453260.webp?s=77dcf6ca919d7f363164b7e2df2ca2ba"></td>
+            <td>Kukumila, Kurena</td>
+            <td>Suzushiro, Sayumi</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/3/61303.jpg?s=46d46c3e7cb4704587b7a78dbf11749d"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/5/453259.webp?s=986cf4a2440cbff381921cfc4def46ad"></td>
+            <td>Emma, Anju</td>
+            <td>Hayami, Saori</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/1/66041.jpg?s=67c9ecfc03dd71f99e58d4cfbfe40765"></td>
+          </tr>
+          </table>
+        </div> 
+    </div> 
+  </div>
+</div>
+<div class="footer">
+  <h2>Coming Soon ...</h2>
+</div>
+</body>
+</html>
