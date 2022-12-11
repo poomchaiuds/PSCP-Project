@@ -1,0 +1,268 @@
+<!--
+  _         _                                          _                                         
+ | |       | |                                        (_)                                         
+ | |_  __ _| | _  _   _ _ __  ___   __ _     __ _ _ __  _ _ __  ___  ____         
+ |  _|/ _` | |/ /| | | | '_ \/ _ \ / _` |   / _` | '_ \| | '_ \/ _ \/ __ \  
+ | |_| | | |   / | |_| | | |  | | | |_| |  | |_| | | | | | | |  | | | ___/ 
+  \__|\__,_|_|\_\ \___/|_| |__| |_|\__,_|   \__,_|_| |_|_|_| |__| |_|\___|    
+                                                         _            _
+                                                        (_)          | | 
+  _ __   ____  ____   _ __              _ __  _ __  ___  _  ____  ___| |_
+ | `_ \ / ___|/  ___\| `_ \            | `_ \| '__|/ _ \| |/ __ \/ __|  _|
+ | |_| | |__ |  /    | |_| |   _____   | |_| | |  | |_| | |  ___/ |__| |_                                                     
+ |  __/ \__  \  |    |  __/   |_____|  |  __/|_|   \___/| |\____|\___|\__|                                                              
+ | |    __ | |  \___ | |               | |            __/ |
+ |_|   |____/ \_____/|_|               |_|           |___/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Kimi no Suizou wo Tabetai</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+/*.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+/* Style the navigation bar links */
+/*.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+/* Right-aligned link */
+/*.navbar a.right {
+  float: right;
+}
+/* Change color on hover */
+/*.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Active/current link */
+/*.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding:25px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 80%; /* IE10 */
+  flex: 80%;
+  background-color: white;
+  padding: 25px;
+}
+
+.split {
+  height: 50%;
+  width: 50%;
+  position: static;
+  z-index: 1;
+  top: 0;
+  overflow-x: visible;
+  padding-top: 0px;
+}
+
+.left {
+  padding: 20px;
+  text-align: left;
+}
+
+.right {
+  padding: 20px;
+  text-align: right
+}
+
+.centered {
+  position: static;
+  padding-left: 200px;
+}
+
+img.centered {
+  width: 150px;
+  border-radius: 50%;
+}
+h3 {
+  margin-left: 40px;
+}
+
+p {
+font-size: 16px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+}
+
+.mid{
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Takuma anime</h1>
+  <p>prototype</p>
+</div>
+
+<div class="row">
+  <div class="side">
+    <div><img src="https://cdn.myanimelist.net/images/anime/1768/93291.jpg"></div>
+    <h3>ข้อมูล</h3>
+    <p>ช่องทางที่ฉาย: Movie</p>
+    <p>จำนวนตอน: 1</p>
+    <p>สถานะ: จบแล้ว</p>
+    <p>เริ่มฉาย: ก.ย. 1, 2018</p>
+    <p>ผู้กำกับ: Aniplex, ABC Animation</p>
+    <p>ผู้ถือลิขสิทธิ์: Aniplex of America</p>
+    <p>สตูดิโอ: Studio VOLN</p>
+    <p>ช่องทางหลัก: Novel</p>
+    <p>ประเภทเนื้อหา: Drama, Romance</p>
+    <p>ธีม: School</p>
+    <p>ระยะเวลาที่ฉาย: 1 ชั่วโมง 48 นาที</p>
+    <p>ประเภทความรุนแรง: PG-13 - วัยรุ่นอายุ 13 ปีขึ้นไป</p>
+  </div>
+  <div class="main">
+    <h2>Kimi no Suizou wo Tabetai</h2>
+    <p>เรื่องราวของ Kimi no Suizou o Tabetai กล่าวถึง ยามากูจิ ซากุระ สาวสวยขวัญใจหนุ่ม ๆ ในโรงเรียนมัธยม และ โบคุ เด็กหนุ่มหนอนหนังสือที่ไม่สนใจคนอื่นรอบตัว ด้วยความที่ชอบอ่านหนังสือเหมือนกัน ทำให้ความสัมพันธ์ระหว่างเพื่อนของทั้งสองพัฒนาอย่างรวดเร็ว โบคุแอบชอบซากุระ จนวันหนึ่งซากุระบอกว่าเธอกำลังจะตายด้วยโรคมะเร็งตับ เขารักษาว่าจะเก็บความลับไว้และใช้เวลาอยู่กับเธอในช่วงสุดท้ายของชีวิตในเวลาสั้นๆ เวลาผ่านไป 12 ปีหลังการจากไปของซากุระ โบคุได้กลับมาเป็นครูที่โรงเรียนเก่าที่เคยเรียนกับเธอ เขาได้พบสมุดบันทึกที่ซากุระซ่อนไว้ โบคุเริ่มอ่านบันทึกเล่มนั้นที่เต็มไปด้วยความทรงจำของหญิงสาว ความรักที่เธอไม่เคยบอกใคร ที่อธิบายถึงความรักอีกด้านหนึ่งที่หัวใจไม่เคยเปิดเพื่อมองเห็น แม้มันจะอยู่ตรงหน้ามาตลอดก็ตาม </p>
+    <br>
+    
+      <div class="centered">
+        <h2>Opening theme</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/DA_LZFaksSw">
+        </iframe>
+        </div>
+      <div class="centered">
+        <h2>Main Trailer</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/MONVPR1dnRQ?enablejsapi=1&wmode=opaque&autoplay=1">
+        </iframe>
+      </div>
+      <div>
+        <h2>Characters & Voice Actors</h2></div>
+      <div class="verticalhorizontal centered">
+        <table class="center" style="width: 100%;">
+          <tr>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/6/364192.webp?s=af6e36897670b115d5bc982e9fe92620"></td>
+            <td>Yamauchi, Sakura</td>
+            <td>Lynn</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/2/68025.jpg?s=2c3bd17123157b4a46488e0b3e0e58b5"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/6/391312.webp?s=d7b5ebc251b50ab8e1bf29a3b6ebcc1e"></td>
+            <td>Shiga, Haruki</td>
+            <td>Takasugi, Mahiro</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/3/52359.jpg?s=ffd04f074f03151dcb6d65718ca32a60"></td>
+          </tr>
+        
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/14/373090.webp?s=19e562b24f444561515690eeac2dd78b"></td>
+            <td>Takimoto, Kyouko</td>
+            <td>Fujii, Yukiyo</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/1/64826.jpg?s=04f26460a39451e2e17686762e6b2a2f"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/3/391313.webp?s=9e2a983d90039d09ad7e7e87ea5e37dd"></td>
+            <td>Miyata, Issei</td>
+            <td>Fukushima, Jun</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/2/55670.jpg?s=844522eaf6b152e0118c161a8fc3e3c9"></td>
+          </tr>
+          </table>
+        </div> 
+    </div> 
+  </div>
+</div>
+<div class="footer">
+  <h2>Coming Soon ...</h2>
+</div>
+</body>
+</html>
