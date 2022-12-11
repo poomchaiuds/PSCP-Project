@@ -1,0 +1,272 @@
+<!--
+  _         _                                          _                                         
+ | |       | |                                        (_)                                         
+ | |_  __ _| | _  _   _ _ __  ___   __ _     __ _ _ __  _ _ __  ___  ____         
+ |  _|/ _` | |/ /| | | | '_ \/ _ \ / _` |   / _` | '_ \| | '_ \/ _ \/ __ \  
+ | |_| | | |   / | |_| | | |  | | | |_| |  | |_| | | | | | | |  | | | ___/ 
+  \__|\__,_|_|\_\ \___/|_| |__| |_|\__,_|   \__,_|_| |_|_|_| |__| |_|\___|    
+                                                         _            _
+                                                        (_)          | | 
+  _ __   ____  ____   _ __              _ __  _ __  ___  _  ____  ___| |_
+ | `_ \ / ___|/  ___\| `_ \            | `_ \| '__|/ _ \| |/ __ \/ __|  _|
+ | |_| | |__ |  /    | |_| |   _____   | |_| | |  | |_| | |  ___/ |__| |_                                                     
+ |  __/ \__  \  |    |  __/   |_____|  |  __/|_|   \___/| |\____|\___|\__|                                                              
+ | |    __ | |  \___ | |               | |            __/ |
+ |_|   |____/ \_____/|_|               |_|           |___/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Death Note</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+/*.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+/* Style the navigation bar links */
+/*.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+/* Right-aligned link */
+/*.navbar a.right {
+  float: right;
+}
+/* Change color on hover */
+/*.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Active/current link */
+/*.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding:25px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 80%; /* IE10 */
+  flex: 80%;
+  background-color: white;
+  padding: 25px;
+}
+
+.split {
+  height: 50%;
+  width: 50%;
+  position: static;
+  z-index: 1;
+  top: 0;
+  overflow-x: visible;
+  padding-top: 0px;
+}
+
+.left {
+  padding: 20px;
+  text-align: left;
+}
+
+.right {
+  padding: 20px;
+  text-align: right
+}
+
+.centered {
+  position: static;
+  padding-left: 200px;
+}
+
+img.centered {
+  width: 150px;
+  border-radius: 50%;
+}
+h3 {
+  margin-left: 40px;
+}
+
+p {
+font-size: 16px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+}
+
+.mid{
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Takuma anime</h1>
+  <p>prototype</p>
+</div>
+
+<div class="row">
+  <div class="side">
+    <div><img src="https://cdn.myanimelist.net/images/anime/9/9453.jpg"></div>
+    <h3>ข้อมูล</h3>
+    <p>ช่องทางที่ฉาย: TV</p>
+    <p>จำนวนตอน: 37</p>
+    <p>สถานะ: จบแล้ว</p>
+    <p>เริ่มฉาย: 4 ต.ค. 2006 ถึง 27 มิ.ย. 2007</p>
+    <p>ฤดูกาล: ฤดูใบไม้ร่วง 2006</p>
+    <p>ฉายทุกวันที่: วันอาทิตย์ เวลา 00:00 (JST)</p>
+    <p>ผู้กำกับ: VAP, Konami, Ashi Productions, Nippon Television Network, Shueisha</p>
+    <p>ผู้ถือลิขสิทธิ์: VIZ Media</p>
+    <p>สตูดิโอ: Madhouse</p>
+    <p>ช่องทางหลัก: Manga</p>
+    <p>ประเภทเนื้อหา: Supernatural, Suspense</p>
+    <p>ธีม: Psychological</p>
+    <p>ระยะเวลาที่ฉาย: 23 นาทีต่อ ep.</p>
+    <p>ประเภทความรุนแรง: R - 17+ (ความรุนแรงและคําหยาบคาย)</p>
+  </div>
+  <div class="main">
+    <h2>Koe no Katachi</h2>
+    <p>การฆาตกรรมที่โหดเหี้ยม การโจรกรรมเล็กๆ น้อยๆ และความรุนแรงที่ไร้สติก่อให้เกิดมลพิษต่อโลกมนุษย์ ในทางตรงกันข้ามอาณาจักรแห่งความตายคือถ้ําการพนันที่ไม่เปลี่ยนแปลง Light Yagami นักเรียนญี่ปุ่นวัย 17 ปีผู้เฉลียวฉลาดและเทพเจ้าแห่งความตายซาดิสต์ Ryuk มีความเชื่ออย่างหนึ่งคือโลกของพวกเขาเน่าเฟะ</p>
+    <p>เพื่อความบันเทิงของเขาเอง Ryuk ทิ้ง "เดธโน้ต" ของเขาเข้าสู่โลกมนุษย์ แสงสะดุดกับมันถือว่ากฎข้อแรกไร้สาระ: มนุษย์ที่มีชื่อเขียนไว้ในบันทึกนี้จะตาย อย่างไรก็ตาม การล่อลวงนั้นยิ่งใหญ่เกินไป และไลท์ก็ทดลองโดยการเขียนชื่ออาชญากร ซึ่งทําให้เกิดการฆาตกรรมครั้งแรกของเขาอย่างน่ารําคาญ </p>
+    <p>เมื่อตระหนักถึงพลังอันน่าสะพรึงกลัวของพระเจ้าที่ตกอยู่ในมือของเขา Light—ภายใต้นามแฝง "Kira"—ติดตามความรู้สึกชั่วร้ายของความยุติธรรมของเขาโดยมีเป้าหมายสูงสุดในการชําระล้างโลกของผู้ทําชั่วทั้งหมด นักสืบผู้บงการที่พิถีพิถัน L กําลังตามรอยเขาอยู่แล้ว แต่เมื่อความฉลาดของ Light เป็นคู่แข่งกับ L's การไล่ล่าครั้งใหญ่ของคิระกลายเป็นการต่อสู้ที่ดุเดือดของปัญญาที่สามารถจบลงได้ก็ต่อเมื่อหนึ่งในนั้นตายไปแล้ว </p>
+    <br>
+    
+      <div class="centered">
+        <h2>Opening theme</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/nJMiunnNdOc">
+        </iframe>
+        </div>
+      <div class="centered">
+        <h2>Main Trailer</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/Amag3NrjBc0">
+        </iframe>
+      </div>
+      <div>
+        <h2>Characters & Voice Actors</h2></div>
+      <div class="verticalhorizontal centered">
+        <table class="center" style="width: 100%;">
+          <tr>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/10/249647.webp?s=54f22aeff1aafc5d2a035a9632c4ae24"></td>
+            <td>Lawliet, L</td>
+            <td>Yamaguchi, Kappei</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/3/65308.jpg?s=ffbaa1bf4a22f792da82dd490d8d5069"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/6/63870.webp?s=1b4b6270e31c05c59bf8874c352a50a7"></td>
+            <td>Yagami, Light</td>
+            <td>Miyano, Mamoru</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/1/66414.jpg?s=8880db148c2eb5fffd3724f381eec784"></td>
+          </tr>
+        
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/10/59125.webp?s=e17304bdd0d65dcfbbaf2c0c2ab18fc5"></td>
+            <td>Ryuk</td>
+            <td>Nakamura, Shidou</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/3/12269.jpg?s=142f0e8f1e4d90db26851df1d2e7b5f1"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/2/470067.webp?s=3342e997724a304dd716003ffc6adb63"></td>
+            <td>Yagami, Souichirou</td>
+            <td>Uchida, Naoya</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/1/5706.jpg?s=3358b73f141f5c2d97bd864ba10c5a39"></td>
+          </tr>
+          </table>
+        </div> 
+    </div> 
+  </div>
+</div>
+<div class="footer">
+  <h2>Coming Soon ...</h2>
+</div>
+</body>
+</html>
