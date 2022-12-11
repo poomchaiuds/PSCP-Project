@@ -1,0 +1,274 @@
+<!--
+  _         _                                          _                                         
+ | |       | |                                        (_)                                         
+ | |_  __ _| | _  _   _ _ __  ___   __ _     __ _ _ __  _ _ __  ___  ____         
+ |  _|/ _` | |/ /| | | | '_ \/ _ \ / _` |   / _` | '_ \| | '_ \/ _ \/ __ \  
+ | |_| | | |   / | |_| | | |  | | | |_| |  | |_| | | | | | | |  | | | ___/ 
+  \__|\__,_|_|\_\ \___/|_| |__| |_|\__,_|   \__,_|_| |_|_|_| |__| |_|\___|    
+                                                         _            _
+                                                        (_)          | | 
+  _ __   ____  ____   _ __              _ __  _ __  ___  _  ____  ___| |_
+ | `_ \ / ___|/  ___\| `_ \            | `_ \| '__|/ _ \| |/ __ \/ __|  _|
+ | |_| | |__ |  /    | |_| |   _____   | |_| | |  | |_| | |  ___/ |__| |_                                                     
+ |  __/ \__  \  |    |  __/   |_____|  |  __/|_|   \___/| |\____|\___|\__|                                                              
+ | |    __ | |  \___ | |               | |            __/ |
+ |_|   |____/ \_____/|_|               |_|           |___/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Slam Dunk</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+/*.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+/* Style the navigation bar links */
+/*.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+/* Right-aligned link */
+/*.navbar a.right {
+  float: right;
+}
+/* Change color on hover */
+/*.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Active/current link */
+/*.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding:25px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 80%; /* IE10 */
+  flex: 80%;
+  background-color: white;
+  padding: 25px;
+}
+
+.split {
+  height: 50%;
+  width: 50%;
+  position: static;
+  z-index: 1;
+  top: 0;
+  overflow-x: visible;
+  padding-top: 0px;
+}
+
+.left {
+  padding: 20px;
+  text-align: left;
+}
+
+.right {
+  padding: 20px;
+  text-align: right
+}
+
+.centered {
+  position: static;
+  padding-left: 200px;
+}
+
+img.centered {
+  width: 150px;
+  border-radius: 50%;
+}
+h3 {
+  margin-left: 40px;
+}
+
+p {
+font-size: 16px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+}
+
+.mid{
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Takuma anime</h1>
+  <p>prototype</p>
+</div>
+
+<div class="row">
+  <div class="side">
+    <div><img src="https://cdn.myanimelist.net/images/anime/12/86890.jpg"></div>
+    <h3>ข้อมูล</h3>
+    <p>ช่องทางที่ฉาย: TV</p>
+    <p>จำนวนตอน: 101</p>
+    <p>สถานะ: จบแล้ว</p>
+    <p>เริ่มฉาย: 16 ตุลาคม 1993 to 23 มีนาคม 1996</p>
+    <p>ฤดูกาล: ฤดูใบไม้ร่วง 1993 </p>
+    <p>ฉายทุกวันที่: Unknown</p>
+    <p>ผู้กำกับ: TV Asahi, Animax</p>
+    <p>ผู้ถือลิขสิทธิ์: Flatiron Film Company, Geneon Entertainment USA</p>
+    <p>สตูดิโอ: Toei Animation</p>
+    <p>ช่องทางหลัก: Manga</p>
+    <p>ประเภทเนื้อหา: Sports</p>
+    <p>ธีม: School, Team Sports</p>
+    <p>เนื้อหาสำหรับ: เด็กผู้ชาย</p>
+    <p>ระยะเวลาที่ฉาย: 23 นาทีต่อตอน</p>
+    <p>ประเภทความรุนแรง: PG - 13+ (วัยรุ่น 13 ปีหรือแก่กว่า)</p>
+  </div>
+  <div class="main">
+    <h2>Slam Dunk</h2>
+    <p>ซากุรางิ ฮานามิจิ หนุ่มผู้ช้ำรักในสมัยม.ต้น เมื่อถูกสาวๆหักอกนับ 50 ครั้ง เขาก็ย้ายไปเรียนที่โรงเรียนโชโฮคุ และใช้ชีวิตไปวันๆร่วมกับพรรคพวกทั้ง 4 อย่าง มิโตะ โยเฮย์,ทาคามิยะ โนโซมิ,โนมะ จูอิจิโร่ และ โอคุสึ ยูจิ วันหนึ่งซากุรางิก็ได้รับการชักชวนจาก อาคางิ ฮารุโกะ ให้เขาร่วมชมรมบาสเก็ตบอลของโรงเรียนโชโฮคุ และ การมาของเธอ ทำให้ชีวิตรักของซากุรางิกลับมาอีกครั้ง และ ยอมตกลงเข้าชมรมบาส แต่ชีวิตนักบาสเก็ตบอลของซากุรางินั้นก็ไม่ราบรื่นซักเท่าไร นอกจากจะฝึกหนัก ไม่ให้ได้ใช้ท่าดังก์ที่ตนเองต้องการแล้ว ตัวซากุรางิเองก็ไม่ถูกกับ อาคางิ ทาเคโนริ กัปตันทีมและเป็นพี่ชายของฮารุโกะ รวมไปถึงการมาของ รุคาว่า คาเอเดะ นักบาสดาวรุ่งฝืมือดีที่ฮารุโกะนั้นแอบหลงรัก ชนิดที่ทำให้ซากุรางินั้นไม่กินเส้นกับรุคาว่าเอาซะเลย แถมยังถูกชักชวนให้ไปชมรมยูโดอีกต่างหาก หลังจากจบการแข่งขันกับเรียวนัน ทีมโชโฮคุก็ได้สมาชิกใหม่เพิ่มอีก2คน ได้แก่ มิยางิ เรียวตะ และ มิตซึอิ ฮิซาชิ ทั้งหมดก็ผนึกกำลังกัน สานฝันในการพิชิตชัยทั่วประเทศให้จงได้</p>
+    <p>  
+    </p>
+    
+    <br>
+    
+      <div class="centered">
+        <h2>Opening theme</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/m_QP5_rdH_g">
+        </iframe>
+        </div>
+      <div class="centered">
+        <h2>Main Trailer</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/A75PkXcSNQ4">
+        </iframe>
+      </div>
+      <div>
+        <h2>Characters & Voice Actors</h2></div>
+      <div class="verticalhorizontal centered">
+        <table class="center" style="width: 100%;">
+          <tr>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/7/314546.webp?s=dffbc9b8685b47f434dd4e1021f136c4"></td>
+            <td>Sakuragi, Hanamichi</td>
+            <td>Kusao, Takeshi</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/1/33063.jpg?s=7a94628e1751a05a554939f842dbf1a3"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/3/47093.webp?s=451c1258c41e7dca750eabc576480aeb"></td>
+            <td>Rukawa, Kaede</td>
+            <td>Midorikawa, Hikaru</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/2/56626.jpg?s=1126959003f1ca2f352d96d74df8cfea"></td>
+          </tr>
+        
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/9/47096.webp?s=e457cb7b0126783759541c13821b2ac3"></td>
+            <td>Akagi, Takenori</td>
+            <td>Yanada, Kiyoyuki</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/1/29653.jpg?s=b7b89b810d5bffb0132663dec143370e"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/13/58145.webp?s=c78d34985d5f53b79163154753702903"></td>
+            <td>Akagi, Haruko</td>
+            <td>Hiramatsu, Akiko</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/2/13659.jpg?s=f771417838e9a94e28e692264929b098"></td>
+          </tr>
+          </table>
+        </div> 
+    </div> 
+  </div>
+</div>
+<div class="footer">
+  <h2>Coming Soon ...</h2>
+</div>
+</body>
+</html>
