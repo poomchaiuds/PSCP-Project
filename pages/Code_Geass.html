@@ -1,0 +1,272 @@
+<!--
+  _         _                                          _                                         
+ | |       | |                                        (_)                                         
+ | |_  __ _| | _  _   _ _ __  ___   __ _     __ _ _ __  _ _ __  ___  ____         
+ |  _|/ _` | |/ /| | | | '_ \/ _ \ / _` |   / _` | '_ \| | '_ \/ _ \/ __ \  
+ | |_| | | |   / | |_| | | |  | | | |_| |  | |_| | | | | | | |  | | | ___/ 
+  \__|\__,_|_|\_\ \___/|_| |__| |_|\__,_|   \__,_|_| |_|_|_| |__| |_|\___|    
+                                                         _            _
+                                                        (_)          | | 
+  _ __   ____  ____   _ __              _ __  _ __  ___  _  ____  ___| |_
+ | `_ \ / ___|/  ___\| `_ \            | `_ \| '__|/ _ \| |/ __ \/ __|  _|
+ | |_| | |__ |  /    | |_| |   _____   | |_| | |  | |_| | |  ___/ |__| |_                                                     
+ |  __/ \__  \  |    |  __/   |_____|  |  __/|_|   \___/| |\____|\___|\__|                                                              
+ | |    __ | |  \___ | |               | |            __/ |
+ |_|   |____/ \_____/|_|               |_|           |___/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Code Geass</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+/*.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+/* Style the navigation bar links */
+/*.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+/* Right-aligned link */
+/*.navbar a.right {
+  float: right;
+}
+/* Change color on hover */
+/*.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Active/current link */
+/*.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding:25px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 80%; /* IE10 */
+  flex: 80%;
+  background-color: white;
+  padding: 25px;
+}
+
+.split {
+  height: 50%;
+  width: 50%;
+  position: static;
+  z-index: 1;
+  top: 0;
+  overflow-x: visible;
+  padding-top: 0px;
+}
+
+.left {
+  padding: 20px;
+  text-align: left;
+}
+
+.right {
+  padding: 20px;
+  text-align: right
+}
+
+.centered {
+  position: static;
+  padding-left: 200px;
+}
+
+img.centered {
+  width: 150px;
+  border-radius: 50%;
+}
+h3 {
+  margin-left: 40px;
+}
+
+p {
+font-size: 16px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+}
+
+.mid{
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Takuma anime</h1>
+  <p>prototype</p>
+</div>
+
+<div class="row">
+  <div class="side">
+    <div><img src="https://cdn.myanimelist.net/images/anime/5/50331.jpg"></div>
+    <h3>ข้อมูล</h3>
+    <p>ช่องทางที่ฉาย: TV</p>
+    <p>จำนวนตอน: 25</p>
+    <p>สถานะ: จบแล้ว</p>
+    <p>เริ่มฉาย: 6 ตุลาคม 2006 to 29 กรกฎาคม 2007</p>
+    <p>ฤดูกาล: ฤดูใบไม้ร่วง 2006 </p>
+    <p>ฉายทุกวันที่: วันศุกร์ เวลา 01:25 น. (JST)</p>
+    <p>ผู้กำกับ: Bandai Visual, Mainichi Broadcasting System, Bandai, Sony Music Entertainment, Bandai Namco Entertainment, Hakuhodo DY Media Partners</p>
+    <p>ผู้ถือลิขสิทธิ์: Funimation, Bandai Entertainment</p>
+    <p>สตูดิโอ: Sunrise</p>
+    <p>ช่องทางหลัก: Original</p>
+    <p>ประเภทเนื้อหา: Action, Drama, Sci-Fi</p>
+    <p>ธีม: Mecha, Military, School, Super Power</p>
+    <p>เนื้อหาสำหรับ: เด็กผู้ชาย</p>
+    <p>ระยะเวลาที่ฉาย: 24 นาทีต่อตอน</p>
+    <p>ประเภทความรุนแรง: R - 17+ (รุนแรงและหยาบคาย)</p>
+  </div>
+  <div class="main">
+    <h2>Code Geass</h2>
+    <p>เวลาล่วงเลยผ่านไปหลังจากสงครามครั้งใหญ่ โลกก็กลับมาสงบสุขอีกครั้งและไม่มีการเคลื่อนไหวใดๆ จากกลุ่มปฏิวัติ ”ภาคีอัศวินดำ” แต่แล้วจู่ๆ เจ้าหญิง “นานาลี่” และ ผู้อยู่ภายใต้หน้ากากปริศนา “ซีโร่” ผู้ที่คอยปกป้องชาวเมืองได้โดนลักพาตัวไป เวลานั้นเองสิ่งที่ไม่คาดคิดก็เกิดขึ้น เมื่อ ”ลูลูช” ชายผู้ถูกซีโร่ฆ่าสังหารกลับปรากฏตัวอีกครั้ง อีกทั้งยังได้รับการยืนยันจากแหล่งข่าวต่างประเทศว่านั่นคือลูลูซตัวจริงอีกด้วยด้วย ดูท่าเขากำลังจะวางแผนเพื่อก่อการอะไรบางอย่างอยู่ สงครามครั้งใหญ่กำลังจะอุบัติขึ้นอีกครั้ง
+    </p>
+    <br>
+    
+      <div class="centered">
+        <h2>Opening theme</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/mNmF_8iR1vw">
+        </iframe>
+        </div>
+      <div class="centered">
+        <h2>Main Trailer</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/eXfYL7RttKE">
+        </iframe>
+      </div>
+      <div>
+        <h2>Characters & Voice Actors</h2></div>
+      <div class="verticalhorizontal centered">
+        <table class="center" style="width: 100%;">
+          <tr>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/8/406163.webp?s=72474b20b8c957b8f60b0af029517c60"></td>
+            <td>Lamperouge, Lelouch</td>
+            <td>Fukuyama, Jun</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/3/60810.jpg?s=e3f5b394ae1e215359052aef53b5d844"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/13/33815.webp?s=41320febdbc1490a236d435170084436"></td>
+            <td>C.C.</td>
+            <td>Yukana</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/2/45746.jpg?s=b87f8af22a34d51c3de001546510953a"></td>
+          </tr>
+        
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/8/31533.webp?s=cc49209ef9f121c06b12d099369419ff"></td>
+            <td>Stadtfeld, Kallen</td>
+            <td>Koshimizu, Ami</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/3/50996.jpg?s=baccbc03be241084f0403eeb0e651459"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/2/31564.webp?s=f83399c92501b5bf11ae10efb7f49524"></td>
+            <td>Kururugi, Suzaku</td>
+            <td>Sakurai, Takahiro</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/3/62791.jpg?s=e63f4d0ee3e5817a7017f3ce182d040d"></td>
+          </tr>
+          </table>
+        </div> 
+    </div> 
+  </div>
+</div>
+<div class="footer">
+  <h2>Coming Soon ...</h2>
+</div>
+</body>
+</html>
