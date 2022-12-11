@@ -1,0 +1,270 @@
+<!--
+  _         _                                          _                                         
+ | |       | |                                        (_)                                         
+ | |_  __ _| | _  _   _ _ __  ___   __ _     __ _ _ __  _ _ __  ___  ____         
+ |  _|/ _` | |/ /| | | | '_ \/ _ \ / _` |   / _` | '_ \| | '_ \/ _ \/ __ \  
+ | |_| | | |   / | |_| | | |  | | | |_| |  | |_| | | | | | | |  | | | ___/ 
+  \__|\__,_|_|\_\ \___/|_| |__| |_|\__,_|   \__,_|_| |_|_|_| |__| |_|\___|    
+                                                         _            _
+                                                        (_)          | | 
+  _ __   ____  ____   _ __              _ __  _ __  ___  _  ____  ___| |_
+ | `_ \ / ___|/  ___\| `_ \            | `_ \| '__|/ _ \| |/ __ \/ __|  _|
+ | |_| | |__ |  /    | |_| |   _____   | |_| | |  | |_| | |  ___/ |__| |_                                                     
+ |  __/ \__  \  |    |  __/   |_____|  |  __/|_|   \___/| |\____|\___|\__|                                                              
+ | |    __ | |  \___ | |               | |            __/ |
+ |_|   |____/ \_____/|_|               |_|           |___/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ookami Kodomo no Ame to Yuki</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+/*.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+/* Style the navigation bar links */
+/*.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+/* Right-aligned link */
+/*.navbar a.right {
+  float: right;
+}
+/* Change color on hover */
+/*.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Active/current link */
+/*.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding:25px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 80%; /* IE10 */
+  flex: 80%;
+  background-color: white;
+  padding: 25px;
+}
+
+.split {
+  height: 50%;
+  width: 50%;
+  position: static;
+  z-index: 1;
+  top: 0;
+  overflow-x: visible;
+  padding-top: 0px;
+}
+
+.left {
+  padding: 20px;
+  text-align: left;
+}
+
+.right {
+  padding: 20px;
+  text-align: right
+}
+
+.centered {
+  position: static;
+  padding-left: 200px;
+}
+
+img.centered {
+  width: 150px;
+  border-radius: 50%;
+}
+h3 {
+  margin-left: 40px;
+}
+
+p {
+font-size: 16px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+}
+
+.mid{
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Takuma anime</h1>
+  <p>prototype</p>
+</div>
+
+<div class="row">
+  <div class="side">
+    <div><img src="https://cdn.myanimelist.net/images/anime/9/35721.jpg"></div>
+    <h3>ข้อมูล</h3>
+    <p>ช่องทางที่ฉาย: Movie</p>
+    <p>จำนวนตอน: 1</p>
+    <p>สถานะ: จบแล้ว</p>
+    <p>เริ่มฉาย: 21 / 07 / 2012</p>
+    <p>ฉายทุกวันที่: วันอาทิตย์ เวลา 00:00 (JST)</p>
+    <p>ผู้กำกับ: Madhouse, VAP, Dentsu, Yomiuri Telecasting, Kadokawa Shoten, Toho, Hiroshima Television</p>
+    <p>ผู้ถือลิขสิทธิ์: Funimation</p>
+    <p>สตูดิโอ: Studio Chizu</p>
+    <p>ช่องทางหลัก: Original</p>
+    <p>ประเภทเนื้อหา: Award Winning, Fantasy, Slice of Life</p>
+    <p>ธีม: Childcare</p>
+    <p>ระยะเวลาที่ฉาย: 1 ชั่วโมง 57 นาที</p>
+    <p>ประเภทความรุนแรง: G - ทุกเพศทุกวัย</p>
+  </div>
+  <div class="main">
+    <h2>Ookami Kodomo no Ame to Yuki</h2>
+    <p>ฮานะนักศึกษาวิทยาลัยที่ขยันขันแข็งตกหลุมรักชายลึกลับที่เข้าเรียนในชั้นเรียนหนึ่งของเธอแม้ว่าเขาจะไม่ใช่นักเรียนตัวจริงก็ตาม ปรากฎว่าเขาไม่ใช่มนุษย์อย่างแท้จริงเช่นกัน ในคืนพระจันทร์เต็มดวงเขาแปลงร่างโดยเปิดเผยว่าเขาเป็นมนุษย์หมาป่าตัวสุดท้ายที่ยังมีชีวิตอยู่ อย่างไรก็ตามเรื่องนี้ความรักของฮาน่ายังคงแข็งแกร่งและในที่สุดทั้งสองก็ตัดสินใจที่จะเริ่มต้นครอบครัว</p>
+    <p>ฮานะให้กําเนิดลูกที่แข็งแรงสองคน—อาเมะซึ่งเกิดในช่วงฝนตก และยูกิเกิดในช่วงหิมะตก—ทั้งคู่มีความสามารถในการกลายเป็นหมาป่า ซึ่งเป็นลักษณะที่สืบทอดมาจากพ่อของพวกเขา อย่างไรก็ตามในไม่ช้าการเสียชีวิตอย่างกะทันหันของคนรักของเธอทําลายชีวิตของฮานะทําให้เธอต้องเลี้ยงดูครอบครัวที่แปลกประหลาดด้วยตัวเอง ความเครียดจากการเลี้ยงดูลูกๆ ที่มีนิสัยดุร้ายในเมืองที่มีประชากรหนาแน่น ทั้งหมดในขณะที่รักษาตัวตนของพวกเขาไว้เป็นความลับ จนนําไปสู่การตัดสินใจที่จะย้ายไปอยู่ในชนบท ซึ่งเธอหวังว่าอาเมะและยูกิจะมีชีวิตที่ปราศจากการตัดสินของสังคม Wolf Children เป็นเรื่องราวที่อบอุ่นหัวใจเกี่ยวกับความท้าทายของการเป็นแม่เลี้ยงเดี่ยวในโลกสมัยใหม่ที่ไม่อาจให้อภัยได้ </p>
+    <br>
+    
+      <div class="centered">
+        <h2>Opening theme</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/kMt2sIBbsg4">
+        </iframe>
+        </div>
+      <div class="centered">
+        <h2>Main Trailer</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/8xLji7WsW0w?enablejsapi=1&wmode=opaque&autoplay=1">
+        </iframe>
+      </div>
+      <div>
+        <h2>Characters & Voice Actors</h2></div>
+      <div class="verticalhorizontal centered">
+        <table class="center" style="width: 100%;">
+          <tr>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/8/161461.webp?s=16026c5f49efe0b48c4662ecb1f6ab9b"></td>
+            <td>Hana</td>
+            <td>Miyazaki, Aoi</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/2/49681.jpg?s=051d8d8458d59846f3cf9fbe8a0a8b77"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/6/161479.webp?s=6ea0a41a7fddceedab311b588f4fedea"></td>
+            <td>Ame</td>
+            <td>Nishii, Yukito</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/1/19057.jpg?s=224f21d6efc9130f0b0bcf43cdb51258"></td>
+          </tr>
+        
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/14/161465.webp?s=b09c524cdc14d16e096476158d886795"></td>
+            <td>Yuki</td>
+            <td>Kuroki, Haru</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/1/53522.jpg?s=a5ce397a1523a13c1f927656d08a5780"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/3/161463.webp?s=ee29405528d49f0571765fa50297d607"></td>
+            <td>Ookami</td>
+            <td>Osawa, Takao</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/2/19055.jpg?s=29a220d3a5fb5ae8e5b5fe15013cd065"></td>
+          </tr>
+          </table>
+        </div> 
+    </div> 
+  </div>
+</div>
+<div class="footer">
+  <h2>Coming Soon ...</h2>
+</div>
+</body>
+</html>
