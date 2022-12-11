@@ -1,0 +1,274 @@
+<!--
+  _         _                                          _                                         
+ | |       | |                                        (_)                                         
+ | |_  __ _| | _  _   _ _ __  ___   __ _     __ _ _ __  _ _ __  ___  ____         
+ |  _|/ _` | |/ /| | | | '_ \/ _ \ / _` |   / _` | '_ \| | '_ \/ _ \/ __ \  
+ | |_| | | |   / | |_| | | |  | | | |_| |  | |_| | | | | | | |  | | | ___/ 
+  \__|\__,_|_|\_\ \___/|_| |__| |_|\__,_|   \__,_|_| |_|_|_| |__| |_|\___|    
+                                                         _            _
+                                                        (_)          | | 
+  _ __   ____  ____   _ __              _ __  _ __  ___  _  ____  ___| |_
+ | `_ \ / ___|/  ___\| `_ \            | `_ \| '__|/ _ \| |/ __ \/ __|  _|
+ | |_| | |__ |  /    | |_| |   _____   | |_| | |  | |_| | |  ___/ |__| |_                                                     
+ |  __/ \__  \  |    |  __/   |_____|  |  __/|_|   \___/| |\____|\___|\__|                                                              
+ | |    __ | |  \___ | |               | |            __/ |
+ |_|   |____/ \_____/|_|               |_|           |___/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Banana Fish</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+/*.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+/* Style the navigation bar links */
+/*.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+/* Right-aligned link */
+/*.navbar a.right {
+  float: right;
+}
+/* Change color on hover */
+/*.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Active/current link */
+/*.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding:25px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 80%; /* IE10 */
+  flex: 80%;
+  background-color: white;
+  padding: 25px;
+}
+
+.split {
+  height: 50%;
+  width: 50%;
+  position: static;
+  z-index: 1;
+  top: 0;
+  overflow-x: visible;
+  padding-top: 0px;
+}
+
+.left {
+  padding: 20px;
+  text-align: left;
+}
+
+.right {
+  padding: 20px;
+  text-align: right
+}
+
+.centered {
+  position: static;
+  padding-left: 200px;
+}
+
+img.centered {
+  width: 150px;
+  border-radius: 50%;
+}
+h3 {
+  margin-left: 40px;
+}
+
+p {
+font-size: 16px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+}
+
+.mid{
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Takuma anime</h1>
+  <p>prototype</p>
+</div>
+
+<div class="row">
+  <div class="side">
+    <div><img src="https://cdn.myanimelist.net/images/anime/1190/93472.jpg"></div>
+    <h3>ข้อมูล</h3>
+    <p>ช่องทางที่ฉาย: TV</p>
+    <p>จำนวนตอน: 24</p>
+    <p>สถานะ: จบแล้ว</p>
+    <p>เริ่มฉาย: 6 กรกฎาคม 2018 to 21 ธันวาคม 2018</p>
+    <p>ฤดูกาล: ฤดูร้อน 2018 </p>
+    <p>ฉายทุกวันที่: วันศุกร์ เวลา 00:55 (JST)</p>
+    <p>ผู้กำกับ: Aniplex, Dentsu, Movic, Fuji TV, Shogakukan</p>
+    <p>ผู้ถือลิขสิทธิ์: -</p>
+    <p>สตูดิโอ: MAPPA</p>
+    <p>ช่องทางหลัก: Manga</p>
+    <p>ประเภทเนื้อหา: Action, Adventure, Drama</p>
+    <p>ธีม: Delinquents</p>
+    <p>เนื้อหาสำหรับ: ผู้หญิง</p>
+    <p>ระยะเวลาที่ฉาย: 22 นาทีต่อตอน</p>
+    <p>ประเภทความรุนแรง: R - 17+ (violence & profanity)</p>
+  </div>
+  <div class="main">
+    <h2>Banana Fish</h2>
+    <p>เหตุการณ์ในปี 1985 แอช ลินซ์ หัวหน้าแก๊งหนุ่มในย่านดาวทาวน์ของนิวยอร์ค ดูแลพี่ชาย กริฟ อดีตทหารอเมริกันที่เสียสติยิงพวกเดียวกันในสงครามเวียดนามเมื่อ 12 ปีก่อน เบาะแสเดียวที่ทราบ คือ คำว่า บาบาน่าฟิซ ที่พี่ชายพูดตลอดเวลา เขามาพัวพันกับคดีที่เกิดขึ้นในนิวยอร์คที่เชื่อมโยงกับสิ่งที่เกิดขึ้นกับพี่ชายเขา จนพบผู้ช่วยช่างกล้องชาวญี่ปุ่น โอคุมุระ เอจิ ที่มาพัวพันกับเรื่องนี้ และยังพัวพันกับ ดีโน กอลซิเน่ มาเฟียที่เคยอุปการะเขาในตอนเด็ก</p>
+    <p>  
+    </p>
+    
+    <br>
+    
+      <div class="centered">
+        <h2>Opening theme</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/L-Bzhpm8h0o">
+        </iframe>
+        </div>
+      <div class="centered">
+        <h2>Main Trailer</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/LRzyT-lty2g">
+        </iframe>
+      </div>
+      <div>
+        <h2>Characters & Voice Actors</h2></div>
+      <div class="verticalhorizontal centered">
+        <table class="center" style="width: 100%;">
+          <tr>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/9/370360.webp?s=7c58b5b90b72b3c217a6491f219c20a2"></td>
+            <td>Callenreese, Aslan Jade</td>
+            <td>Uchida, Yuuma</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/2/71413.jpg?s=69540191e8863961770f22fdadd74793"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/9/361570.webp?s=662023db3f62e864bbb1c5c27afd9537"></td>
+            <td>Okumura, Eiji</td>
+            <td>Nojima, Kenji</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/3/46155.jpg?s=e10805390fd0ef9bb2d07f9528c019bb"></td>
+          </tr>
+        
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/4/361822.webp?s=34bf0fb9d41a24d5878d46caefdc83f6"></td>
+            <td>Wong, Shorter</td>
+            <td>Furukawa, Makoto</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/1/72232.jpg?s=47d6ff76d6487b09ea7a08eea7be94eb"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/8/361823.webp?s=a4c2a2df51ad6dae83e3ea020fc95000"></td>
+            <td>Lee, Yut-Lung</td>
+            <td>Fukuyama, Jun</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/3/60810.jpg?s=e3f5b394ae1e215359052aef53b5d844"></td>
+          </tr>
+          </table>
+        </div> 
+    </div> 
+  </div>
+</div>
+<div class="footer">
+  <h2>Coming Soon ...</h2>
+</div>
+</body>
+</html>
