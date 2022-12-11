@@ -1,0 +1,274 @@
+<!--
+  _         _                                          _                                         
+ | |       | |                                        (_)                                         
+ | |_  __ _| | _  _   _ _ __  ___   __ _     __ _ _ __  _ _ __  ___  ____         
+ |  _|/ _` | |/ /| | | | '_ \/ _ \ / _` |   / _` | '_ \| | '_ \/ _ \/ __ \  
+ | |_| | | |   / | |_| | | |  | | | |_| |  | |_| | | | | | | |  | | | ___/ 
+  \__|\__,_|_|\_\ \___/|_| |__| |_|\__,_|   \__,_|_| |_|_|_| |__| |_|\___|    
+                                                         _            _
+                                                        (_)          | | 
+  _ __   ____  ____   _ __              _ __  _ __  ___  _  ____  ___| |_
+ | `_ \ / ___|/  ___\| `_ \            | `_ \| '__|/ _ \| |/ __ \/ __|  _|
+ | |_| | |__ |  /    | |_| |   _____   | |_| | |  | |_| | |  ___/ |__| |_                                                     
+ |  __/ \__  \  |    |  __/   |_____|  |  __/|_|   \___/| |\____|\___|\__|                                                              
+ | |    __ | |  \___ | |               | |            __/ |
+ |_|   |____/ \_____/|_|               |_|           |___/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jujutsu Kaisen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+/*.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+/* Style the navigation bar links */
+/*.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+/* Right-aligned link */
+/*.navbar a.right {
+  float: right;
+}
+/* Change color on hover */
+/*.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Active/current link */
+/*.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding:25px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 80%; /* IE10 */
+  flex: 80%;
+  background-color: white;
+  padding: 25px;
+}
+
+.split {
+  height: 50%;
+  width: 50%;
+  position: static;
+  z-index: 1;
+  top: 0;
+  overflow-x: visible;
+  padding-top: 0px;
+}
+
+.left {
+  padding: 20px;
+  text-align: left;
+}
+
+.right {
+  padding: 20px;
+  text-align: right
+}
+
+.centered {
+  position: static;
+  padding-left: 200px;
+}
+
+img.centered {
+  width: 150px;
+  border-radius: 50%;
+}
+h3 {
+  margin-left: 40px;
+}
+
+p {
+font-size: 16px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+}
+
+.mid{
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Takuma anime</h1>
+  <p>prototype</p>
+</div>
+
+<div class="row">
+  <div class="side">
+    <div><img src="https://cdn.myanimelist.net/images/anime/1171/109222.jpg"></div>
+    <h3>ข้อมูล</h3>
+    <p>ช่องทางที่ฉาย: TV</p>
+    <p>จำนวนตอน: 24</p>
+    <p>สถานะ: จบแล้ว</p>
+    <p>เริ่มฉาย: 3 ตุลาคม 2020 to 27 มีนาคม 2021</p>
+    <p>ฤดูกาล: ฤดูใบไม้ร่วง 2020 </p>
+    <p>ฉายทุกวันที่: วันเสาร์ เวลา 01:25 น. (JST)</p>
+    <p>ผู้กำกับ: Mainichi Broadcasting System, TOHO animation, Shueisha, dugout, Sumzap</p>
+    <p>ผู้ถือลิขสิทธิ์: VIZ Media</p>
+    <p>สตูดิโอ: MAPPA</p>
+    <p>ช่องทางหลัก: Manga</p>
+    <p>ประเภทเนื้อหา: Action, Award Winning, Fantasy</p>
+    <p>ธีม: School</p>
+    <p>เนื้อหาสำหรับ: เด็กผู้ชาย</p>
+    <p>ระยะเวลาที่ฉาย: 24 นาทีต่อตอน</p>
+    <p>ประเภทความรุนแรง: R - 17+ (ความรุนแรงและคำหยาบคาย)</p>
+  </div>
+  <div class="main">
+    <h2>Jujutsu Kaisen</h2>
+    <p>อิตาโดริ ยูจิ เด็กนักเรียนชั้นมัธยมปลายปี 1 หนึ่งในสมาชิกชมรมวิจัยสิ่งลี้ลับ ผู้ค้นพบวัตถุประหลาดเข้า จึงได้นำมามอบให้กับพวกรุ่นพี่ที่อยู่ในชมรม ในขณะเดียวกัน ฟุชิงุโระ เมงุมิ ก็ได้ออกมาตามหาคำสาประดับพิเศษ นั่นก็คือนิ้วของ เรียวเมง สุคุนะ ที่อิตาโดริเก็บได้นั่นเอง ฟุชิงุโระเมื่อรู้ว่าคำสาปอยู่ที่อิตาโดริจึงรีบตามไปเอาคืน แต่ก็พบว่าความซวยได้มาเยือนพวกเขาแล้วแน่นอน เมื่อเหล่ารุ่นพี่ของอิตาโดริตัดสินใจที่จะคลายผนึกออก และแล้วฝันร้ายก็เริ่มต้นขึ้นจนได้ เมื่อเหล่าคำสาปที่อยู่ใกล้บริเวณนั้นสัมผัสได้ถึงพลังที่แข็งแกร่งจึงรีบเข้ามาแย่งกัน เพราะมันคือ ‘กุญแจสำคัญ’ ในการมอบพลังอำนาจอันแข็งแกร่งให้แก่ผู้ที่กินมันเข้าไป</p>
+    <p>  
+    </p>
+    
+    <br>
+    
+      <div class="centered">
+        <h2>Opening theme</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/1tk1pqwrOys">
+        </iframe>
+        </div>
+      <div class="centered">
+        <h2>Main Trailer</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/YKJyP8L6QEs">
+        </iframe>
+      </div>
+      <div>
+        <h2>Characters & Voice Actors</h2></div>
+      <div class="verticalhorizontal centered">
+        <table class="center" style="width: 100%;">
+          <tr>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/15/422168.webp?s=2e7738d451a903f8e77d8a109b5a4827"></td>
+            <td>Gojou, Satoru</td>
+            <td>Nakamura, Yuuichi</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/2/63264.jpg?s=4889fb923a3727b540d623569338dcbb"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/11/427601.webp?s=e6511969838ceebbcb52f8f4f42f0ecc"></td>
+            <td>Itadori, Yuuji</td>
+            <td>Enoki, Junya</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/2/62840.jpg?s=617ecb6dfaa6376dd6c0bbb0b8f7415b"></td>
+          </tr>
+        
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/2/392689.webp?s=67164ed6a9d9dd897ad13f2c7970eb1f"></td>
+            <td>Fushiguro, Megumi</td>
+            <td>Uchida, Yuuma</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/2/71413.jpg?s=69540191e8863961770f22fdadd74793"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/12/422313.webp?s=7300305022d36ec78604f299ae908502"></td>
+            <td>Kugisaki, Nobara</td>
+            <td>Seto, Asami</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/1/65840.jpg?s=c827059b2d3c6434385a09459f1359b7"></td>
+          </tr>
+          </table>
+        </div> 
+    </div> 
+  </div>
+</div>
+<div class="footer">
+  <h2>Coming Soon ...</h2>
+</div>
+</body>
+</html>
