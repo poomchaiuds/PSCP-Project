@@ -150,3 +150,102 @@ def owarimonogatari():
 def owarimonogatari():
     return render_template("deathnote.html") 
        
+@app.route("/Code Geass") #37
+def owarimonogatari():
+    return render_template("Code_Geass.html") 
+
+@app.route("/Hotaru no Haka") #38
+def owarimonogatari():
+    return render_template("Hotaru no Haka.html") 
+       
+@app.route("/Kimi no Na Wa") #39
+def owarimonogatari():
+    return render_template("Kimi_no_Na_Wa.html") 
+
+@app.route("/Violet Evergarden Movie") #40
+def owarimonogatari():
+    return render_template("Violet_Evergarden_Movie.html") 
+
+@app.route("/Yakusoku no Neverland") #41
+def owarimonogatari():
+    return render_template("Yakusoku no Neverland.html") 
+
+@app.route("/Perfect Blue") #42
+def owarimonogatari():
+    return render_template("Perfect Blue.html") 
+
+@app.route("/One Punch Man") #43
+def owarimonogatari():
+    return render_template("One Punch Man.html") 
+
+@app.route("/Slam Dunk") #44
+def owarimonogatari():
+    return render_template("Slam Dunk.html") 
+
+@app.route("/Samurai Champloo") #45
+def owarimonogatari():
+    return render_template("Samurai Champloo.html") 
+
+@app.route("/Sora yori mo Tooi Basho") #46
+def owarimonogatari():
+    return render_template("Sora yori mo Tooi Basho.html") 
+
+@app.route("/Kenpuu Denki Berserk") #47
+def owarimonogatari():
+    return render_template("Kenpuu Denki Berserk.html") 
+
+@app.route("/Slam Dunk") #48
+def owarimonogatari():
+    return render_template("Slam Dunk.html") 
+
+@app.route("/Slam Dunk") #49
+def owarimonogatari():
+    return render_template("Slam Dunk.html") 
+
+@app.route("/Slam Dunk") #50
+def owarimonogatari():
+    return render_template("Slam Dunk.html") 
+
+@app.route("/Sci-Fi") #random scifi
+def owarimonogatari():
+    return render_template("scifi.html") 
+
+@app.route("/Fantasy") #random fantasy
+def owarimonogatari():
+    return render_template("fantasy.html") 
+
+@app.route("/Action") #random action
+def owarimonogatari():
+    return render_template("action.html") 
+
+@app.route("/Horror") #random horror
+def owarimonogatari():
+    return render_template("Slam Dunk.html") 
+
+@app.route("/Drama") #random drama
+def owarimonogatari():
+    return render_template("Slam Dunk.html") 
+
+@app.route("/Super Natural") #random super natural
+def owarimonogatari():
+    return render_template("super natural.html") 
+
+@app.route("/Comedy") #random comedy
+def owarimonogatari():
+    return render_template("comedy.html") 
+
+@app.route("/Sports") #random sports
+def owarimonogatari():
+    return render_template("sports.html") 
+
+@app.route("/Adventure") #random adventure
+def owarimonogatari():
+    return render_template("adventure.html") 
+
+@app.route("/Romance") #random romance
+def owarimonogatari():
+    return render_template("romance.html") 
+
+@app.route("/Slice Of Life") #random slice of life
+def owarimonogatari():
+    return render_template("slice_of_life.html") 
