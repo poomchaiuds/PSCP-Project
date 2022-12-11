@@ -1,0 +1,272 @@
+<!--
+  _         _                                          _                                         
+ | |       | |                                        (_)                                         
+ | |_  __ _| | _  _   _ _ __  ___   __ _     __ _ _ __  _ _ __  ___  ____         
+ |  _|/ _` | |/ /| | | | '_ \/ _ \ / _` |   / _` | '_ \| | '_ \/ _ \/ __ \  
+ | |_| | | |   / | |_| | | |  | | | |_| |  | |_| | | | | | | |  | | | ___/ 
+  \__|\__,_|_|\_\ \___/|_| |__| |_|\__,_|   \__,_|_| |_|_|_| |__| |_|\___|    
+                                                         _            _
+                                                        (_)          | | 
+  _ __   ____  ____   _ __              _ __  _ __  ___  _  ____  ___| |_
+ | `_ \ / ___|/  ___\| `_ \            | `_ \| '__|/ _ \| |/ __ \/ __|  _|
+ | |_| | |__ |  /    | |_| |   _____   | |_| | |  | |_| | |  ___/ |__| |_                                                     
+ |  __/ \__  \  |    |  __/   |_____|  |  __/|_|   \___/| |\____|\___|\__|                                                              
+ | |    __ | |  \___ | |               | |            __/ |
+ |_|   |____/ \_____/|_|               |_|           |___/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Samurai Champloo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+/*.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+/* Style the navigation bar links */
+/*.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+/* Right-aligned link */
+/*.navbar a.right {
+  float: right;
+}
+/* Change color on hover */
+/*.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Active/current link */
+/*.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding:25px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 80%; /* IE10 */
+  flex: 80%;
+  background-color: white;
+  padding: 25px;
+}
+
+.split {
+  height: 50%;
+  width: 50%;
+  position: static;
+  z-index: 1;
+  top: 0;
+  overflow-x: visible;
+  padding-top: 0px;
+}
+
+.left {
+  padding: 20px;
+  text-align: left;
+}
+
+.right {
+  padding: 20px;
+  text-align: right
+}
+
+.centered {
+  position: static;
+  padding-left: 200px;
+}
+
+img.centered {
+  width: 150px;
+  border-radius: 50%;
+}
+h3 {
+  margin-left: 40px;
+}
+
+p {
+font-size: 16px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+}
+
+.mid{
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Takuma anime</h1>
+  <p>prototype</p>
+</div>
+
+<div class="row">
+  <div class="side">
+    <div><img src="https://cdn.myanimelist.net/images/anime/1375/121599.jpg"></div>
+    <h3>ข้อมูล</h3>
+    <p>ช่องทางที่ฉาย: TV</p>
+    <p>จำนวนตอน: 26</p>
+    <p>สถานะ: จบแล้ว</p>
+    <p>ออกอากาศ: 20 พฤษภาคม 2004 ถึง 19 มีนาคม 2005</p>
+    <p>ฤดูกาล: ฤดูใบไม้ผลิ 2004</p>
+    <p>ฉายทุกวันที่: วันเสาร์เวลา 10:30 น. (JST)</p>
+    <p>ผู้กำกับ: Victor Entertainment, Fuji TV, Barnum Studio, Tokuma Shoten, flying DOG</p>
+    <p>ผู้ถือลิขสิทธิ์: Funimation, Geneon Entertainment USA</p>
+    <p>สตูดิโอ: Manglobe</p>
+    <p>ช่องทางหลัก: Original</p>
+    <p>ประเภทเนื้อหา: Action, Adventure, Comedy</p>
+    <p>ธีม: Historical, Samurai</p>
+    <p>ระยะเวลาที่ฉาย: 24 นาทีต่อ ep.</p>
+    <p>ประเภทความรุนแรง: R - 17+ (ความรุนแรงและคําหยาบคาย)</p>
+  </div>
+  <div class="main">
+    <h2>Samurai Champloo</h2>
+    <p>Fuu Kasumi เป็นพนักงานเสิร์ฟที่อายุน้อยและเงอะงะที่ใช้เวลาทั้งวันทํางานอย่างสงบในโรงน้ําชาขนาดเล็ก นั่นคือจนกว่าเธอจะเผลอทําเครื่องดื่มหกใส่ลูกค้าคนหนึ่งของเธอโดยไม่ได้ตั้งใจ! เมื่อกลุ่มซามูไรก่อกวนเธออย่างไม่หยุดหย่อน Fuu จึงเรียกหาซามูไรอีกคนในร้านอย่างสิ้นหวัง Mugen ผู้ซึ่งเอาชนะพวกเขาได้อย่างรวดเร็วด้วยเทคนิคการต่อสู้ที่ดุเดือดของเขาโดยใช้การเคลื่อนไหวที่ชวนให้นึกถึงเบรกแดนซ์ น่าเสียดายที่ Mugen ตัดสินใจเลือกต่อสู้กับ Ronin Jin ที่ไม่เต็มใจซึ่งใช้รูปแบบการต่อสู้ด้วยดาบที่แม่นยําและดั้งเดิมกว่าและหลังพิสูจน์ให้เห็นว่าเป็นคู่ต่อสู้ที่น่าเกรงขาม ปัญหาเดียวคือพวกเขาลงเอยด้วยการทําลายทั้งร้านและฆ่าลูกชายของผู้พิพากษาท้องถิ่นโดยไม่ได้ตั้งใจ</p>
+    <p>สําหรับอาชญากรรมของพวกเขาซามูไรทั้งสองถูกจับและเตรียมจะถูกประหารชีวิต อย่างไรก็ตาม พวกเขาได้รับการช่วยเหลือจาก Fuu ซึ่งจ้างทั้งคู่เป็นบอดี้การ์ดของเธอ แม้ว่าเธอจะไม่มีที่ที่จะกลับไปหาแต่อดีตพนักงานเสิร์ฟก็ปรารถนาที่จะหาซามูไรบางคนที่มีกลิ่นของดอกทานตะวันและขอความช่วยเหลือจากคู่สามีภรรยาที่ถูกเนรเทศในขณะนี้ให้ทําเช่นนั้น แม้ว่าในตอนแรกจะไม่เห็นด้วยกับแนวคิดนี้ แต่ในที่สุดทั้งสองก็ตกลงที่จะช่วยเหลือหญิงสาวในการแสวงหาของเธอ ดังนั้นทั้งสามคนจึงเริ่มการผจญภัยเพื่อค้นหานักรบลึกลับคนนี้นั่นคือถ้า Fuu สามารถป้องกันไม่ให้ Mugen และ Jin ฆ่ากันได้ </p>
+    <p>Samurai Champloo ตั้งอยู่ในยุคเอโดะของญี่ปุ่นที่สลับกันไปตามการเดินทางของบุคคลประหลาดทั้งสามคนนี้ในภารกิจมหากาพย์ที่เต็มไปด้วยแอ็คชั่นตลกและการต่อสู้ด้วยดาบแบบไดนามิกทั้งหมดนี้เป็นไปตามจังหวะของเพลงประกอบฮิปฮอปที่เป็นเอกลักษณ์</p>
+    <br>
+    
+      <div class="centered">
+        <h2>Opening theme</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/Eq6EYcpWB_c">
+        </iframe>
+        </div>
+      <div class="centered">
+        <h2>Main Trailer</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/xWKzbhAUeZE">
+        </iframe>
+      </div>
+      <div>
+        <h2>Characters & Voice Actors</h2></div>
+      <div class="verticalhorizontal centered">
+        <table class="center" style="width: 100%;">
+          <tr>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/5/51569.webp?s=ea9454b982bbc2cbb52d3be05290fe59"></td>
+            <td>Mugen</td>
+            <td>Nakai, Kazuya</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/1/62866.jpg?s=e273d6a6437551b8442159357c4018bd"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/13/62969.webp?s=e1c6db72a7d25405dc979b7af0477108"></td>
+            <td>Jin</td>
+            <td>Sato, Ginpei</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/3/16427.jpg?s=c6b14d7c1d21d3a24a4dd9fa4e7373b1"></td>
+          </tr>
+        
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/7/74061.webp?s=6aaa7e629d5ad3de95cb7a1af5d5bbf7"></td>
+            <td>Kasumi, Fuu</td>
+            <td>Kawasumi, Ayako</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/2/69419.jpg?s=da47eee099d7384262cce64c64724655"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/7/171551.webp?s=91ee28315043bb72a9febef9b5995f7c"></td>
+            <td>Sara</td>
+            <td>Tamagawa, Sakiko</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/2/48887.jpg?s=8ee0bfa0f90333141eeab1071c037a91"></td>
+          </tr>
+          </table>
+        </div> 
+    </div> 
+  </div>
+</div>
+<div class="footer">
+  <h2>Coming Soon ...</h2>
+</div>
+</body>
+</html>
