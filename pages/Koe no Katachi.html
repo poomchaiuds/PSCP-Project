@@ -1,0 +1,272 @@
+<!--
+  _         _                                          _                                         
+ | |       | |                                        (_)                                         
+ | |_  __ _| | _  _   _ _ __  ___   __ _     __ _ _ __  _ _ __  ___  ____         
+ |  _|/ _` | |/ /| | | | '_ \/ _ \ / _` |   / _` | '_ \| | '_ \/ _ \/ __ \  
+ | |_| | | |   / | |_| | | |  | | | |_| |  | |_| | | | | | | |  | | | ___/ 
+  \__|\__,_|_|\_\ \___/|_| |__| |_|\__,_|   \__,_|_| |_|_|_| |__| |_|\___|    
+                                                         _            _
+                                                        (_)          | | 
+  _ __   ____  ____   _ __              _ __  _ __  ___  _  ____  ___| |_
+ | `_ \ / ___|/  ___\| `_ \            | `_ \| '__|/ _ \| |/ __ \/ __|  _|
+ | |_| | |__ |  /    | |_| |   _____   | |_| | |  | |_| | |  ___/ |__| |_                                                     
+ |  __/ \__  \  |    |  __/   |_____|  |  __/|_|   \___/| |\____|\___|\__|                                                              
+ | |    __ | |  \___ | |               | |            __/ |
+ |_|   |____/ \_____/|_|               |_|           |___/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Koe no Katachi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+/*.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+/* Style the navigation bar links */
+/*.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+/* Right-aligned link */
+/*.navbar a.right {
+  float: right;
+}
+/* Change color on hover */
+/*.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Active/current link */
+/*.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding:25px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 80%; /* IE10 */
+  flex: 80%;
+  background-color: white;
+  padding: 25px;
+}
+
+.split {
+  height: 50%;
+  width: 50%;
+  position: static;
+  z-index: 1;
+  top: 0;
+  overflow-x: visible;
+  padding-top: 0px;
+}
+
+.left {
+  padding: 20px;
+  text-align: left;
+}
+
+.right {
+  padding: 20px;
+  text-align: right
+}
+
+.centered {
+  position: static;
+  padding-left: 200px;
+}
+
+img.centered {
+  width: 150px;
+  border-radius: 50%;
+}
+h3 {
+  margin-left: 40px;
+}
+
+p {
+font-size: 16px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+}
+
+.mid{
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Takuma anime</h1>
+  <p>prototype</p>
+</div>
+
+<div class="row">
+  <div class="side">
+    <div><img src="https://cdn.myanimelist.net/images/anime/1122/96435.jpg"></div>
+    <h3>ข้อมูล</h3>
+    <p>ช่องทางที่ฉาย: TV</p>
+    <p>จำนวนตอน: 11</p>
+    <p>สถานะ: จบแล้ว</p>
+    <p>เริ่มฉาย: กันยายนต์ 17, 2016</p>
+    <p>ฤดูกาล: ฤดูใบไม้ผลิ 2021</p>
+    <p>ฉายทุกวันที่: วันอาทิตย์ เวลา 00:00 (JST)</p>
+    <p>ผู้กำกับ: Shochiku, Pony Canyon, Kodansha, ABC Animation, Quaras</p>
+    <p>ผู้ถือลิขสิทธิ์: Eleven Arts, NYAV Post</p>
+    <p>สตูดิโอ: Kyoto Animation</p>
+    <p>ช่องทางหลัก: Manga</p>
+    <p>ประเภทเนื้อหา: Award Winning, Drama</p>
+    <p>ธีม: Romantic Subtext</p>
+    <p>ระยะเวลาที่ฉาย: 2 ชั่วโมง 10 นาที</p>
+    <p>ประเภทความรุนแรง: PG-13 - วัยรุ่นอายุ 13 ปีขึ้นไป</p>
+  </div>
+  <div class="main">
+    <h2>Koe no Katachi</h2>
+    <p>ว่าด้วยการโคจรกลับมาพบกันอีกครั้ง ของ อิชิดะ โชยะ เด็กหัวโจก ประจำห้องเรียน และเด็กสาวที่พึ่งย้ายโรงเรียนมาใหม่ อีกทั้งบกพร่องทางการได้ยินอย่าง นิชิมิยะ โชโกะ หลังจากทั้งสองเคยพบกันในฐานะเพื่อนร่วมห้องสมัยประถม และนิชิมิยะเป็นฝ่ายถูกอิชิดะกลั่นแกล้งเสมอ จนเธอต้องย้ายโรงเรียน ซึ่งสิ่งที่เกิดขึ้นดังกล่าว ก็ส่งผลกระทบต่ออิชิดะด้วยเช่นกัน เมื่อเขาต้องกลายเป็นเด็กเกเรในสายตาเพื่อนๆ และไม่มีใครอยากคบหาเหมือนกับนิชิมิยะ เขาจึงค่อยๆ เข้าใจความรู้สึกของเด็กสาว ที่ไม่ถูกยอมรับในสังคม</p>
+    <p>จนเมื่ออิชิดะได้พบกับนิชิมิยะอีกครั้ง จึงเป็นเหมือนโอกาสให้เขาได้แก้ตัวกับสิ่งที่เขาเคยกระทำผิดลงไป และพยายามเข้าหาเธอมากยิ่งขึ้น ขณะที่นิชิมิยะ สาวผู้ไม่สามารถสื่อสารด้วยคำพูดได้ ก็ไม่ติดใจถือสาเอาความเช่นกัน จนค่อยๆ ก่อเกิดเป็นมิตภาพระหว่าง หนุ่มสาว 2 คน ผู้เป็นเหยื่อของความแปลกแยก… คนหนึ่งถูกกีดกันจากสังคม เพียงเพราะเธอเลือกเกิดมาได้ยินไม่ได้ ส่วนอีกคนถูกกีดกันจากมิตรแท้ เพราะภาพลักษณ์จากสิ่งผิดพลาดที่เขาเคยทำในอดีต </p>
+    <p>อย่างไรก็ตาม… แม้ทั้งสองจะพยายามทำความเรียนรู้ พร้อมกับเยียวยาบาดแผลซึ่งกันและกัน  ทั้งสองคนจึงเหมือนเป็นตัวแทนของคนในสังคมแต่ละแบบ ที่ทั้งสองจะต้องก้าวผ่าน พร้อมกับพิสูจน์ให้เห็นถึงสิ่งสำคัญในมิตรภาพที่แท้จริง </p>
+    <br>
+    
+      <div class="centered">
+        <h2>Opening theme</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/rSn1M0hVf6E">
+        </iframe>
+        </div>
+      <div class="centered">
+        <h2>Main Trailer</h2>
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/XBNWo25izJ8?enablejsapi=1&wmode=opaque&autoplay=1">
+        </iframe>
+      </div>
+      <div>
+        <h2>Characters & Voice Actors</h2></div>
+      <div class="verticalhorizontal centered">
+        <table class="center" style="width: 100%;">
+          <tr>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+            <th>Main Characters</th>
+            <th>Name</th>
+            <th>VA Name</th>
+            <th>Voice Actors</th>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/5/302315.webp?s=5242db458c13b406be61a7ee2c068b3a"></td>
+            <td>Nishimiya, Shouko</td>
+            <td>Hayami, Saori</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/1/66041.jpg?s=67c9ecfc03dd71f99e58d4cfbfe40765"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/8/302316.webp?s=2b190708371aba010cc387c8ef77f77a"></td>
+            <td>Ishida, Shouya</td>
+            <td>Irino, Miyu</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/2/53508.jpg?s=68a1ad4aef75359fd56f09a7683fd664"></td>
+          </tr>
+        
+          <tr>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/10/330472.webp?s=55b2b6e10540bcd56bb9682b57690a16"></td>
+            <td>Nishimiya, Yuzuru</td>
+            <td>Yuuki, Aoi</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/3/67808.jpg?s=3074a08319fa6f05424eed1f508e2233"></td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/characters/2/316403.webp?s=3ced5c1b9822a934d7b266936db5ab03"></td>
+            <td>Ueno, Naoka</td>
+            <td>Kaneko, Yuuki</td>
+            <td><img src="https://cdn.myanimelist.net/r/42x62/images/voiceactors/2/71142.jpg?s=d0581d940ca0ff693fb33d23082ff2b5"></td>
+          </tr>
+          </table>
+        </div> 
+    </div> 
+  </div>
+</div>
+<div class="footer">
+  <h2>Coming Soon ...</h2>
+</div>
+</body>
+</html>
