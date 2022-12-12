@@ -1,0 +1,214 @@
+<!--
+  _         _                                          _                                         
+ | |       | |                                        (_)                                         
+ | |_  __ _| | _  _   _ _ __  ___   __ _     __ _ _ __  _ _ __  ___  ____         
+ |  _|/ _` | |/ /| | | | '_ \/ _ \ / _` |   / _` | '_ \| | '_ \/ _ \/ __ \  
+ | |_| | | |   / | |_| | | |  | | | |_| |  | |_| | | | | | | |  | | | ___/ 
+  \__|\__,_|_|\_\ \___/|_| |__| |_|\__,_|   \__,_|_| |_|_|_| |__| |_|\___|    
+                                                         _            _
+                                                        (_)          | | 
+  _ __   ____  ____   _ __              _ __  _ __  ___  _  ____  ___| |_
+ | `_ \ / ___|/  ___\| `_ \            | `_ \| '__|/ _ \| |/ __ \/ __|  _|
+ | |_| | |__ |  /    | |_| |   _____   | |_| | |  | |_| | |  ___/ |__| |_                                                     
+ |  __/ \__  \  |    |  __/   |_____|  |  __/|_|   \___/| |\____|\___|\__|                                                              
+ | |    __ | |  \___ | |               | |            __/ |
+ |_|   |____/ \_____/|_|               |_|           |___/
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #3cd070;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+/*.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+/* Style the navigation bar links */
+/*.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+/* Right-aligned link */
+/*.navbar a.right {
+  float: right;
+}
+/* Change color on hover */
+/*.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Active/current link */
+/*.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding:25px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 25px;
+}
+
+.split {
+  height: 50%;
+  width: 50%;
+  position: static;
+  z-index: 1;
+  top: 0;
+  overflow-x: visible;
+  padding-top: 0px;
+}
+
+.left {
+  padding: 20px;
+  text-align: left;
+}
+
+.right {
+  padding: 20px;
+  text-align: right
+}
+
+
+
+
+img.centered {
+  width: 150px;
+  border-radius: 50%;
+}
+h3 {
+  margin-left: 40px;
+}
+
+p {
+font-size: 16px;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ff6961;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+    <title>Takuma anime</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Takuma anime</h1>
+      <h2>ดราม่า</h2>
+    </div>  
+    <div class="row">
+      <div class="side">
+        <center><h3>แท็กทั้งหมด</h3></center>
+        <p>แฟนตาซี</p>
+        <p>เหนือธรรมชาติ</p>
+        <p>แอ็คชัน</p>
+        <p>กีฬา</p>
+        <p>ตลก</p>
+        <p>ดราม่า</p>
+        <p>โรแมนซ์</p>
+        <p>ลึกลับ</p>
+        <p>ผจญภัย</p>
+        <p>Sci-Fi</p>
+        <p>การใช้ชีวิต</p>
+
+      </div>
+      <div class="main">
+        <div id="box">
+          <center><button style="margin-bottom: 25px;" onclick = "randImg()"><h2>random anime</h2></button></center>
+          <center><a id="a"><img id="image" width="675px" height="963px"/></a></center>
+        <script type='text/javascript'> 
+        var images = 
+      [
+          imageUrlPair = { ImgSrc:"https://cdn.myanimelist.net/images/anime/2/88336.jpg", Href:"http://127.0.0.1:5000/Black_Clover" },
+          imageUrlPair = { ImgSrc:"https://cdn.myanimelist.net/images/anime/1613/102576.jpg", Href:"http://127.0.0.1:5000/Dr._Stone" },
+          imageUrlPair = { ImgSrc:"https://cdn.myanimelist.net/images/anime/1295/106551.jpg", Href:"http://127.0.0.1:5000/Kaguya-sama_wa_Kokurasetai" },  
+          imageUrlPair = { ImgSrc:"https://cdn.myanimelist.net/images/anime/10/73274.jpg", Href:"http://127.0.0.1:5000/Gintama" },
+          imageUrlPair = { ImgSrc:"https://cdn.myanimelist.net/images/anime/1441/122795.jpg", Href:"http://127.0.0.1:5000/Spy x Family" },  
+          imageUrlPair = { ImgSrc:"https://cdn.myanimelist.net/images/anime/6/89879.jpg", Href:"http://127.0.0.1:5000/Sora_yori_mo_Tooi_Basho" },
+          imageUrlPair = { ImgSrc:"https://cdn.myanimelist.net/images/anime/12/76049.jpg", Href:"http://127.0.0.1:5000//One_Punch_Man" },  
+          imageUrlPair = { ImgSrc:"https://cdn.myanimelist.net/images/anime/1375/121599.jpg", Href:"http://127.0.0.1:5000/Samurai_Champloo" },  
+          imageUrlPair = { ImgSrc:"https://cdn.myanimelist.net/images/anime/8/76479.jpg", Href:"http://127.0.0.1:5000/Owarimonogatari" },  
+          imageUrlPair = { ImgSrc:"https://cdn.myanimelist.net/images/anime/3/75617.jpg", Href:"http://127.0.0.1:5000/Nichijou" },  
+          imageUrlPair = { ImgSrc:"https://cdn.myanimelist.net/images/anime/1302/94882.jpg", Href:"http://127.0.0.1:5000/Grand_Blue" },  
+        ]
+      
+        function randImg() {
+        var size = images.length;
+        var x = Math.floor(size * Math.random());
+        var randomItem = images[x];
+        document.getElementById('image').src = randomItem.ImgSrc;
+        document.getElementById('a').href = randomItem.Href;
+        }
+        randImg();
+        </script>
+        </div>
+      </div>
+</body>
+</html>
