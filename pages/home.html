@@ -85,16 +85,16 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  -ms-flex: 20%; /* IE10 */
-  flex: 20%;
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
   background-color: #f1f1f1;
   padding:25px;
 }
 
 /* Main column */
 .main {   
-  -ms-flex: 80%; /* IE10 */
-  flex: 80%;
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
   background-color: white;
   padding: 25px;
 }
@@ -119,10 +119,8 @@ body {
   text-align: right
 }
 
-.centered {
-  position: static;
-  padding-left: 200px;
-}
+
+
 
 img.centered {
   width: 150px;
@@ -135,29 +133,6 @@ h3 {
 p {
 font-size: 16px;
 }
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-table.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.verticalhorizontal {
-    display: table-cell;
-    height: 300px;
-    text-align: center;
-    width: 300px;
-    vertical-align: middle;
-}
-
-.mid{
-  margin-left: auto;
-  margin-right: auto;
-}
 /* Footer */
 .footer {
   padding: 20px;
@@ -165,24 +140,7 @@ table.center {
   background: #ff6961;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
 </style>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2">
-
     <title>Takuma anime</title>
   </head>
   <body>
@@ -190,86 +148,37 @@ table.center {
       <h1>Home Page</h1>
       <h2>Takuma anime</h2>
     </div>
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
+    <div class="row">
+      <div class="side">
+        <h3 style="margin-left: 75px;">อนิเมะแนะนำประจำสัปดาห์</h3>
+        <div style="margin-left: 25px;"><a href="http://127.0.0.1:5000/Chainsaw_Man"><img src="https://cdn.myanimelist.net/r/320x440/images/anime/1806/126216.webp?s=0061a45755791e6e163426c3fede78a5"></a></div>
+        <h3 style="margin-left: 120px;">Chainsaw Man</h3>
+        <div style="margin-left: 25px;"><a href="http://127.0.0.1:5000/Spy_x_Family"><img src="https://cdn.myanimelist.net/images/anime/1441/122795.jpg" width="320" height="440"></a></div>
+        <h3 style="margin-left: 120px;">Spy x Family</h3>
+        <div style="margin-left: 25px;"><a href="http://127.0.0.1:5000/Attack_on_Titan"><img src="https://cdn.myanimelist.net/images/anime/10/47347.jpg" width="320" height="440"></a></div>
+        <h3 style="margin-left: 120px;">Attack on Titan</h3>
+      </div>
+      <div class="main">
+        <h2 style="margin-left: 410px;">แท็กอนิเมะ</h2>
+        <a href="http://127.0.0.1:5000/Action"><img style="margin-right: 40px;" src="https://tse4.mm.bing.net/th?id=OIP.E6EBchJ7v52lC4zm2zXuqgHaEK&pid=Api&P=0" width="450px" height="300px"></a>
+        <a href="http://127.0.0.1:5000/Fantasy"><img src="https://wallpapercave.com/wp/wp1825526.jpg" width="450px" height="300px"></a>
+        <br>
+        <a href="http://127.0.0.1:5000/Adventure"><img style="margin-right: 40px; margin-top: 40px;" src="https://tse1.mm.bing.net/th?id=OIP.Ln6NJf1Ku5BTlSTeJ_8FkwHaEK&pid=Api&P=0" width="450px" height="300px"></a>
+        <a href="http://127.0.0.1:5000/Romance"><img src="http://wallpapercave.com/wp/A0YkwFd.jpg" width="450px" height="300px"></a>
+        <br>
+        <a href="http://127.0.0.1:5000/Drama"><img style="margin-right: 40px; margin-top: 40px;" src="https://tse1.mm.bing.net/th?id=OIP.RX8X5N3a3qInunhSXBDsSAHaEo&pid=Api&P=0" width="450px" height="300px"></a>
+        <a href="http://127.0.0.1:5000/Sports"><img src="https://wallpapercave.com/wp/wp1818308.jpg" width="450px" height="300px"></a>
+        <br>
+        <a href="http://127.0.0.1:5000/Sci-Fi"><img style="margin-right: 40px; margin-top: 40px;" src="https://tse2.mm.bing.net/th?id=OIP.ggfo9l5o7XUbt6Fmam37ngHaEK&pid=Api&P=0" width="450px" height="300px"></a>
+        <a href="http://127.0.0.1:5000/Super_Natural"><img src="https://tse2.mm.bing.net/th?id=OIP.Z4iUrGC77YKFP23Us6f3GwHaEK&pid=Api&P=0" width="450px" height="300px"></a>
+        <br>
+        <a href="http://127.0.0.1:5000/Slice_Of_Life"><img style="margin-right: 40px; margin-top: 40px;" src="https://tse2.mm.bing.net/th?id=OIP.DV23PH94ezUjzh8pzidhXwHaEK&pid=Api&P=0" width="450px" height="300px"></a>
+        <a href="http://127.0.0.1:5000/Mystery"><img src="https://tse2.mm.bing.net/th?id=OIP.wI7ITw4biFIJgdHREE7ycwHaEK&pid=Api&P=0" width="450px" height="300px"></a>
+        <br>
+        <a href="http://127.0.0.1:5000/Comedy"><img style="margin-left: 250px; margin-top: 40px;" src="https://images6.alphacoders.com/644/644887.png" width="450px" height="300px"></a>
+  
+      </div>
   </div>
-  <div id="box">
-    <button onclick = "randImg()"> random anime</button>
-    <center><a id="a"><img id="image" /></a></center>
-  <script type='text/javascript'> 
-  var images = 
-[
-    imageUrlPair = { ImgSrc:"https://cdn.myanimelist.net/r/320x440/images/anime/1806/126216.webp?s=0061a45755791e6e163426c3fede78a5", Href:"http://127.0.0.1:5000/Chainsaw Man" },
-    imageUrlPair = { ImgSrc:"http://www.hometownsevier.com/wp-content/uploads/2011/01/fork.jpg", Href:"http://eofdreams.com/fork.html" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/9/92/Soup_Spoon.jpg", Href:"http://commons.wikimedia.org/wiki/File:Soup_Spoon.jpg" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-    imageUrlPair = { ImgSrc:"http://upload.wikimedia.org/wikipedia/commons/6/61/Ouashi.jpg", Href:"http://commons.wikimedia.org/wiki/Chopsticks" },
-
-]
-
-  function randImg() {
-  var size = images.length;
-  var x = Math.floor(size * Math.random());
-  var randomItem = images[x];
-  document.getElementById('image').src = randomItem.ImgSrc;
-  document.getElementById('a').href = randomItem.Href;
-  }
-  randImg();
-  </script>
-</div>
   <div class="footer">
     <h2>Coming Soon ...</h2>
   </div>
