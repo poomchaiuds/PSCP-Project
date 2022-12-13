@@ -166,20 +166,6 @@ table.center {
   background: #ff6961;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
 </style>
 </head>
 <body>
@@ -191,8 +177,8 @@ table.center {
 
 <div class="row">
   <div class="side">
-    <div><img src="https://cdn.myanimelist.net/images/anime/9/35721.jpg"></div>
-    <h3>ข้อมูล</h3>
+    <div><img style="margin-left: 50px;" src="https://cdn.myanimelist.net/images/anime/9/35721.jpg"></div>
+    <h3 style="margin-left: 125px;">ข้อมูล</h3>
     <p>ช่องทางที่ฉาย: Movie</p>
     <p>จำนวนตอน: 1</p>
     <p>สถานะ: จบแล้ว</p>
@@ -215,12 +201,12 @@ table.center {
     
       <div class="centered">
         <h2>Opening theme</h2>
-        <iframe width="650" height="350" src="https://www.youtube.com/embed/kMt2sIBbsg4">
+        <iframe style="margin-left: 75px;" width="650" height="350" src="https://www.youtube.com/embed/kMt2sIBbsg4">
         </iframe>
         </div>
       <div class="centered">
         <h2>Main Trailer</h2>
-        <iframe width="650" height="350" src="https://www.youtube.com/embed/8xLji7WsW0w?enablejsapi=1&wmode=opaque&autoplay=1">
+        <iframe style="margin-left: 75px;" width="650" height="350" src="https://www.youtube.com/embed/8xLji7WsW0w?enablejsapi=1&wmode=opaque&autoplay=1">
         </iframe>
       </div>
       <div>
